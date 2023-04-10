@@ -1,16 +1,14 @@
-package Project.CarePet65PM2.Controller;
+package Project.CarePet65PM2.Controller.admin;
 
 
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class Test {
+public class AdminController {
 
     @GetMapping("/")
     public String index(Model model){
