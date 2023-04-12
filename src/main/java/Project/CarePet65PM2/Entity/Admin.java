@@ -16,16 +16,18 @@ public class Admin {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="ad_id")  //ten truong trong database
     private int Id;
+    @Column(name="ad_phone")
+    private String Phone;
     @Column(name="ad_name")
     private String Name;
-    @Column(name="personid")
+    @Column(name="ad_personid")
     private String PersonId;
-    @Column(name="gender")
+    @Column(name="ad_gender")
     private boolean Gender;
-    @Column(name="birthday")
+    @Column(name="ad_birthday")
     private LocalDate Birthday;
-    @Column(name="password")
+    @Column(name="ad_password")
     private String Password;
-    @Column(name="role")
+    @Column(name="ad_role")
     private int Role;
 }
