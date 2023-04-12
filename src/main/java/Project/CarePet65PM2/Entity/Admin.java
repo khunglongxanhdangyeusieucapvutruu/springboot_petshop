@@ -1,13 +1,7 @@
 package Project.CarePet65PM2.Entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDate;
 
@@ -19,6 +13,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class Admin {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="ad_id")  //ten truong trong database
     private int Id;
     @Column(name="ad_name")
